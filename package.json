@@ -4,6 +4,8 @@
   "description": "Training whilst working through the Pro AngularJS book",
   "main": "server.js",
   "dependencies": {
+    "angular": "^1.3.11",
+    "angularjs": "0.0.1",
     "connect": "^3.3.4",
     "karma": "^0.12.31"
   },
