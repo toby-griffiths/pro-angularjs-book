@@ -1,0 +1,30 @@
+{
+  "name": "pro-angularjs-book",
+  "version": "1.0.0",
+  "description": "Training whilst working through the Pro AngularJS book",
+  "main": "server.js",
+  "dependencies": {
+    "connect": "^3.3.4",
+    "karma": "^0.12.31"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:toby-griffiths/pro-angularjs-book.git"
+  },
+  "keywords": [
+    "training",
+    "angularjs",
+    "javascript"
+  ],
+  "author": "Toby Griffiths <toby@cubicmushroom.co.uk>",
+  "license": "proprietary",
+  "bugs": {
+    "url": "https://github.com/toby-griffiths/pro-angularjs-book/issues"
+  },
+  "homepage": "https://github.com/toby-griffiths/pro-angularjs-book"
+}
