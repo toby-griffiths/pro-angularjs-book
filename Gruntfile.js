@@ -40,7 +40,7 @@ module.exports = function (grunt) {
 
         open: {
             all: {
-                path   : 'http://localhost:<%= connect.all.options.port %>',
+                path   : 'http://localhost:<%= connect.all.options.port %>/todo.html',
                 app    : 'Safari',
                 options: {
                     openOn: 'connect.all.listening'
