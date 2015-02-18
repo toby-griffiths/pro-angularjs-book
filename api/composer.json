@@ -1,0 +1,17 @@
+{
+  "name": "toby-griffiths/pro-angularjs-book-api",
+  "description": "API for Pro AngularJS book workthrough",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Toby Griffiths",
+      "email": "toby@cubicmushroom.co.uk"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "slim/slim": "~2.5",
+    "cubicmushroom/routing-annotations": "dev-master",
+    "cubicmushroom/slim-service-manager": "~1.3"
+  }
+}
