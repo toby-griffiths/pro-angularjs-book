@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2b522883ebcf83c4694e35166db38d44",
+    "hash": "4475a409b56131abf199b69c60760986",
     "packages": [
         {
             "name": "cubicmushroom/exceptions",
@@ -51,12 +51,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/cubicmushroom/routing-annotations.git",
-                "reference": "21fe2cbff187abba39c73d669116c2e1189ff3e9"
+                "reference": "e8ea0b8c55b7d4ca42baeca64302e8d8ae573408"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cubicmushroom/routing-annotations/zipball/21fe2cbff187abba39c73d669116c2e1189ff3e9",
-                "reference": "21fe2cbff187abba39c73d669116c2e1189ff3e9",
+                "url": "https://api.github.com/repos/cubicmushroom/routing-annotations/zipball/e8ea0b8c55b7d4ca42baeca64302e8d8ae573408",
+                "reference": "e8ea0b8c55b7d4ca42baeca64302e8d8ae573408",
                 "shasum": ""
             },
             "require": {
@@ -82,20 +82,65 @@
                 }
             ],
             "description": "Library to parse classes for routing annotations and sets up routes",
-            "time": "2015-02-17 17:53:43"
+            "time": "2015-02-18 23:58:11"
         },
         {
-            "name": "cubicmushroom/slim-service-manager",
-            "version": "1.3.3",
+            "name": "cubicmushroom/slim-middleware-routing-annotations",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/cubicmushroom/slim-service-manager.git",
-                "reference": "c8fbc512bf95d38949be5deed6f7e365c8e85dc2"
+                "url": "https://github.com/cubicmushroom/slim-middleware-routing-annotations.git",
+                "reference": "10457e419d2ef2091b8914cc58f3add8657e81f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cubicmushroom/slim-service-manager/zipball/c8fbc512bf95d38949be5deed6f7e365c8e85dc2",
-                "reference": "c8fbc512bf95d38949be5deed6f7e365c8e85dc2",
+                "url": "https://api.github.com/repos/cubicmushroom/slim-middleware-routing-annotations/zipball/10457e419d2ef2091b8914cc58f3add8657e81f7",
+                "reference": "10457e419d2ef2091b8914cc58f3add8657e81f7",
+                "shasum": ""
+            },
+            "require": {
+                "cubicmushroom/exceptions": "~1.0",
+                "cubicmushroom/routing-annotations": "~1.0",
+                "cubicmushroom/slim-service-manager": "~1.3",
+                "slim/slim": "~2.5"
+            },
+            "require-dev": {
+                "codeception/codeception": "2.0.10.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CubicMushroom\\Slim\\Middleware\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Toby Griffiths",
+                    "email": "toby@cubicmushroom.co.uk"
+                }
+            ],
+            "description": "Slim Middleware to add routes from class annotations",
+            "support": {
+                "source": "https://github.com/cubicmushroom/slim-middleware-routing-annotations/tree/master",
+                "issues": "https://github.com/cubicmushroom/slim-middleware-routing-annotations/issues"
+            },
+            "time": "2015-02-19 00:34:36"
+        },
+        {
+            "name": "cubicmushroom/slim-service-manager",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cubicmushroom/slim-service-manager.git",
+                "reference": "9140324f3eb9ca2b48f7baaa6cf2fcb47c6f072d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cubicmushroom/slim-service-manager/zipball/9140324f3eb9ca2b48f7baaa6cf2fcb47c6f072d",
+                "reference": "9140324f3eb9ca2b48f7baaa6cf2fcb47c6f072d",
                 "shasum": ""
             },
             "require": {
@@ -112,7 +157,6 @@
                     "": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -123,7 +167,11 @@
                 }
             ],
             "description": "Slim Framework add on to handle loading services from config",
-            "time": "2015-02-17 16:35:55"
+            "support": {
+                "source": "https://github.com/cubicmushroom/slim-service-manager/tree/master",
+                "issues": "https://github.com/cubicmushroom/slim-service-manager/issues"
+            },
+            "time": "2015-02-19 00:57:44"
         },
         {
             "name": "doctrine/annotations",
@@ -295,10 +343,25 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "1.0",
+            "alias_normalized": "1.0.0.0",
+            "version": "9999999-dev",
+            "package": "cubicmushroom/routing-annotations"
+        },
+        {
+            "alias": "1.3",
+            "alias_normalized": "1.3.0.0",
+            "version": "9999999-dev",
+            "package": "cubicmushroom/slim-service-manager"
+        }
+    ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "cubicmushroom/routing-annotations": 20
+        "cubicmushroom/routing-annotations": 20,
+        "cubicmushroom/slim-middleware-routing-annotations": 20,
+        "cubicmushroom/slim-service-manager": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

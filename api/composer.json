@@ -8,10 +8,26 @@
       "email": "toby@cubicmushroom.co.uk"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/cubicmushroom/slim-middleware-routing-annotations.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/cubicmushroom/slim-service-manager.git"
+    }
+  ],
   "minimum-stability": "stable",
   "require": {
     "slim/slim": "~2.5",
-    "cubicmushroom/routing-annotations": "dev-master",
-    "cubicmushroom/slim-service-manager": "~1.3"
+    "cubicmushroom/routing-annotations": "dev-master as 1.0",
+    "cubicmushroom/slim-middleware-routing-annotations": "dev-master",
+    "cubicmushroom/slim-service-manager": "dev-master as 1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
   }
 }
